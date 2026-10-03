@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int al[5];
+	int i;
+	for(i=0;i<=4;i++)
+	{
+		printf("%d.sayi al-> ",i+1);
+		scanf("%d",&al[i]);
+	}
+	int buyuk=al[0];
+	int kucuk=al[4];
+for(i=0;i<=4;i++)
+{
+	if(buyuk<al[i])
+	{
+		buyuk=al[i];
+	}
+}
+
+for(i=0;i<=4;i++)
+{
+	if(kucuk>al[i])
+	{
+		kucuk=al[i];
+	}
+}
+printf("Alinan sayilarin en buyugu-> %d\n",buyuk);
+printf("Alinan sayilarin en kucugu-> %d\n",kucuk);
+
+	return 0;
+}
